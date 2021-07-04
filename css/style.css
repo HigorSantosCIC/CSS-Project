@@ -1,5 +1,14 @@
 /* Global Styles */
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   color: #343434;
   margin: 0;
@@ -42,6 +51,7 @@ h2 {
 header {
   background: #2f3061;
   color: #f7fff7;
+  text-align: center;
 }
 
 /* Projects */
@@ -65,10 +75,40 @@ header {
   background: rgba(47, 48, 97, 80%);
 }
 
+.project-item {
+  overflow: hidden;
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
 /* Work Experience */
 
 .work-experience {
   background: #a1c6d7;
+}
+.container {
+  border: 2px solid black;
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* display: flow-root; */
+}
+.float {
+  background: lightblue;
+  border: 1px solid white;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  float: left;
 }
 
 /* Education */
@@ -77,6 +117,18 @@ header {
 
 footer {
   background: #343434;
-
   color: #f7fff7;
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
 }
